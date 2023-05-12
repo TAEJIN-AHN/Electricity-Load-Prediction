@@ -4,5 +4,5 @@
 * 기온, 습도, 이슬점 등의 기상정보를 활용하여 5분 단위의 전력수요 예측 인공 신경망 모델을 개발
 * 단, 기상정보만 사용하는 것은 아니며 인터넷에 공개되어 있는 모든 가용 데이터를 사용함
 
-## 진행 상황:runner: ([project_log](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/tree/ff8a6e7903e639cf7650c41b2e28ddfd53069ad4/project_log)로 일일 로그를 확인하셔도 좋습니다!)
+## 진행 상황:runner: ([project_log](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/tree/ff8a6e7903e639cf7650c41b2e28ddfd53069ad4/project_log)로 매일의 진행상황을 확인하셔도 좋습니다!)
 * 논문 스터디 및 데이터 확인
