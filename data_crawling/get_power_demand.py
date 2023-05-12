@@ -1,3 +1,5 @@
+# start_date, end_date는 str 형식으로 입력해야하며, 반환값은 DataFrame임
+
 def get_power_demand(start_date, end_date):
     
     if not isinstance(start_date, str):
