@@ -1,7 +1,8 @@
-```
+
 논문명 : Effective Electricity Demand Prediction via Deep Learning
+
 저자 : Daegun Ko, Youngmin Yoon, Jinoh Kim, Haelyong Choi
-```
+
 **([논문 링크](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10818150))**
 
 ## 개요
