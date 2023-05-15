@@ -40,8 +40,16 @@ BTM(Behind The Meter) 태양광 발전 : 실시간으로 발전량이 계측되�
 
 ![FNN-LSTM](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/149eb3d5-0acc-49b1-b3bd-d464044c20b3)
 
-![FNN-LSTM_2](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/3908223e-b81e-49f7-8da7-e47eb65c0e95)
+![FNN-LSTM_3](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/d7e6674e-bbdc-43fa-bd1e-94bc5e85df58)
 
-※ 기상 데이터는 기온, 습도, 풍속, 일사, 하늘상태, 강수여부로 구성된다.
-※ 모델 학습 시에는 FC 층의 기상인자로 실적 데이터를 사용하며, 학습된 모델로 전력수요를 예측할 경우에는 예보 데이터를 사용한다.
+* 기상 데이터는 기온, 습도, 풍속, 일사, 하늘상태, 강수여부로 구성된다.
+* 모델 학습 시에는 FC 층의 기상인자로 실적 데이터를 사용하며, 학습된 모델로 전력수요를 예측할 경우에는 예보 데이터를 사용한다.
 
+## 결론
+* 평상일에 대한 전력수요예측의 경우, 심층신경망과 XGBoost의 MAPE가 가장 낮았다.
+* 반면 휴일에 대한 전력수요예측의 경우, 상대계수법의 MAPE가 가장 낮았다.
+* 혼합예측기법을 구성하여 예측을 수행했을 때, 혼합예측기법의 성능이 이를 구성하는 단일 예측모형의 성능보다 높았다.
+
+## 해결해야할 숙제!
+* 심층 신경망만으로 전력 수요 예측을 수행했을 때 휴일에 대한 예측 성능을 높이려면 어떤 조치가 필요할 것인가?
+* BTM 태양광 발전량은 어떻게 구할 수 있는가?
