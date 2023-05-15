@@ -67,27 +67,49 @@ def get_weather_fromland(start_date,end_date,auth) -> pd.DataFrame:
         batch = days // 29 + 1
     else:
         batch = 1
-        for i in range(batch):
-            # 종료일 정의
-            if i+1 == batch:
-                to_date = end_date
-            else:
-                to_date = start_date + datetime.timedelta(29)
-            # 날짜 텍스트화
-            str_from_date = start_date.strftime('%Y%m%d')
-            str_to_date = to_date.strftime('%Y%m%d')
-            # url 정의
-            url = base + f'tm1={str_from_date}0000&' + f'tm2={str_to_date}2300&' + 'help=0&' + authKey
-            # 데이터 생성
-            df_tmp = get_parse_weather(url)
-            df = pd.concat([df,df_tmp])
-            # 시작일 재정의
-            start_date = to_date + datetime.timedelta(1)
+    for i in range(batch):
         
+        if start_date - datetime.timedelta(1) == end_date:
+            break
+        elif i+1 == batch:
+            to_date = start_date + datetime.timedelta(days % 29)
+        else:
+            to_date = start_date + datetime.timedelta(29)
+            
+        # 날짜 텍스트화
+        str_from_date = start_date.strftime('%Y%m%d')
+        str_to_date = to_date.strftime('%Y%m%d')
+        # url 정의
+        url = base + f'tm1={str_from_date}0000&' + f'tm2={str_to_date}2300&' + 'help=0&' + authKey
+        print(f'current_batch : {i + 1}/{batch}, current_date : {str_from_date} - {str_to_date}')
+        # 데이터 생성
+        try:
+            print(url)
+            df_tmp = get_parse_weather(url)
+        except:
+            print(f'error occured on {str_to_date}')
+            df = pd.concat([df,df_tmp])
+            break
+        
+        df = pd.concat([df,df_tmp])
+        # 시작일 재정의
+        start_date = to_date + datetime.timedelta(1)
+        print(days)
+
+    # 날짜 형식 변환
+    df['datetime'] = pd.to_datetime(df['YYMMDDHHMI_KST'], format='%Y%m%d%H%M')
+    df['datetime'] = df['datetime'].apply(lambda x : x.strftime(format='%Y-%m-%d %H:%M'))
+    
+    # 컬럼 순서 정리
+    df.drop(['YYMMDDHHMI_KST'],axis=1,inplace=True)
+    cols = df.columns.tolist()
+    cols = [cols[-1]] + [col for col in cols[:-1]]
+    df = df[cols]
+
     return df
 
 def get_parse_weather(url):
-
+    df =  pd.DataFrame()
     res = requests.get(url)
     soup = BeautifulSoup(res.text,'html.parser')
 
@@ -110,8 +132,8 @@ def get_parse_weather(url):
 
     cols = [col_1d[i] + '_' + col_2d[i] for i in range(len(col_1d))]
     df.columns = cols
-    
     return df
 
-auth = 'API 인증 키'
-df = get_weather_fromland(20220101,20220102,auth)
+auth = 본인 키!
+df = get_weather_fromland(20130101,20230512,auth)
+df.to_csv('./weather_fromland_20190101_20230319.csv')
