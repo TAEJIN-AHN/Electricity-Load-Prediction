@@ -15,9 +15,7 @@
 1. 여름, 겨울의 전력수요가 봄, 가을의 전력수요보다 상대적으로 많다 (냉난방 기기 사용 증가)
 2. 요일, 시간 및 휴일의 유형에 따라 전력수요의 특징이 다르다. (예 : 주말의 경우 평일에 비해 비교적 전력수요가 적다.)
 #### BTM(Behind The Meter) 태양광 발전량
-```
-BTM(Behind The Meter) 태양광 발전 : 실시간으로 발전량이 계측되지 않는 태양광 발전
-```
+* BTM(Behind The Meter) 태양광 발전 : 실시간으로 발전량이 계측되지 않는 태양광 발전
 * BTM 태양광 발전은 전체적인 전력수요를 감소시킴
 #### 기상 상태와 관련한 요인 (기온, 습도, 풍속, 일사, 전운량, 강수량)
 * 기온과 전력수요와의 상관관계는 점점 낮아지고 있음
@@ -56,7 +54,7 @@ BTM(Behind The Meter) 태양광 발전 : 실시간으로 발전량이 계측되�
 * BTM 태양광 발전량은 어떻게 구할 수 있는가? (해결)
   * 권보성님이 참여하신 2020년 논문 'BTM 발전량을 고려한 단기 전력 수요 예측 알고리즘'을 통해 BTM 태양광 발전량을 추정할 수 있는 대략적인 산식을 확인할 수 있었다! ([논문 링크](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10491322))
 
-$$BTMSG_t = KPXSG_t * \frac{SC^{PPA}(1+ETC_{ratio})}{SC^KPX}$$
+$$BTMSG_t = KPXSG_t * \frac{SC^{PPA}(1+ETC_{ratio})}{SC^{KPX}}$$
 $BTMSG_t$ : t시점의 BTM 태양광 발전량
 
 $KPXSG_t$ : t시점의 KPX 태양광 발전량
