@@ -40,3 +40,8 @@ BTM(Behind The Meter) 태양광 발전 : 실시간으로 발전량이 계측되�
 
 ![FNN-LSTM](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/149eb3d5-0acc-49b1-b3bd-d464044c20b3)
 
+![FNN-LSTM_2](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/3908223e-b81e-49f7-8da7-e47eb65c0e95)
+
+※ 기상 데이터는 기온, 습도, 풍속, 일사, 하늘상태, 강수여부로 구성된다.
+※ 모델 학습 시에는 FC 층의 기상인자로 실적 데이터를 사용하며, 학습된 모델로 전력수요를 예측할 경우에는 예보 데이터를 사용한다.
+
