@@ -11,4 +11,5 @@
 ```
 현재 타임스텝의 출력이 다음 타임스텝의 입력값이 되는 특징을 가진 신경망!
 ```
+![RNN](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/09264c07-431d-41c7-b060-2f12416cf836)
 
