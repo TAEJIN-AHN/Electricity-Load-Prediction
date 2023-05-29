@@ -11,4 +11,4 @@
 
 * 학습시간 : 약 4시간 40분 (50 epoch 학습)
 * Train, Test 데이터를 미리 분리한 후, Train 데이터셋에만 Scaler를 Fit-Transform하여 학습하고 테스트 시에 Scaler로 Transform만 진행하여 Test 진행
-* **TEST_MAPE : 9.66%**
+* **TEST_MAPE : 2.18%**
