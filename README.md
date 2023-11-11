@@ -153,6 +153,34 @@
 * Feature의 조합을 기준으로 비교군/대조군을 설정하여 CNN+LSTM(GRU) 모델을 학습, 성능을 비교함
   
   * Type 2와 Type 4의 MAPE는 3.29%, 3.5%로 기상정보를 제외한 모델의 성능이 상대적으로 우수함
+
+<table align = 'center'>
+     <tr>
+        <th align = 'center' style = 'padding : 3px'>변수 조합(기호)</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓓ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ, ⓓ</th>
+    </tr>
+    <tr>
+        <td align = 'center' style = 'padding : 3px'>MAPE(CNN+LSTM)</td>
+        <td align = 'center' style = 'padding : 3px'>13.09%</td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.29%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'>3.26%</td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.50%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'>2.88%</td>
+    </tr>
+        <tr>
+        <td align = 'center' style = 'padding : 3px'>MAPE(CNN+GRU)</td>
+        <td align = 'center' style = 'padding : 3px'>8.75%</td>
+        <td align = 'center' style = 'padding : 3px'>3.38%</td>
+        <td align = 'center' style = 'padding : 3px'>3.48%</td>
+        <td align = 'center' style = 'padding : 3px'>3.80%</td>
+        <td align = 'center' style = 'padding : 3px'>4.78%</td>
+    </tr>
+</table>
+
 ---
 ### **⑤ 결과 및 기대효과**
 
