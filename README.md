@@ -1,4 +1,4 @@
-![image](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/37de49ec-4f64-4fed-b0fa-fa8229da8cdd)# 세상에서 가장 가벼운 단기 전력수요 예측 모델
+# 세상에서 가장 가벼운 단기 전력수요 예측 모델
 ## **요약**
 ### **① 기본 정보**
 * 팀구성 및 기여도 : 5명 / 20%
@@ -83,7 +83,7 @@
     * 모델 학습 시, 이동평균 등의 기술지표와 요일, 시간대 등의 시간 정보를 반드시 포함하도록 함
   * **기상정보 중 기온과 일사량이 전력 수요와 상대적으로 높은 상관관계를 가짐**
 
-    <p><img src = ''></p>
+    <p><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/b414f9be-160f-4aaf-a3a9-9920d730f5dc'></p>
 #### B.3. 데이터셋 소개 및 인사이트
 **전력수요 EDA 결과**
 - 전력 수요는 명확한 계절성을 가지며, 연도에 관계없이 시간대별 패턴이 일관되게 유지됩니다.
