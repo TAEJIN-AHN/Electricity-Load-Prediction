@@ -179,7 +179,7 @@
         <td align = 'center' style = 'padding : 3px'>3.80%</td>
         <td align = 'center' style = 'padding : 3px'>4.78%</td>
     </tr>
-</table>
+   </table>
 
 ---
 ### **⑤ 결과 및 기대효과**
