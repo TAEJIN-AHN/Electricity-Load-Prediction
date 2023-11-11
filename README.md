@@ -72,7 +72,7 @@
   * 달력(공휴일) 정보 : 휴일 유형에 맞춘 더미 변수를 모델 학습에 활용하기 위해 휴일 이름을 통일
     <p>예) 부처님오신날 → 석가탄신일, 임시공휴일, 대체휴무일 → 대체공휴일</p>
 
-### **② EDA**
+### **③ EDA**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/blob/main/EDA_MAIN.ipynb)를 참고해주시기 바랍니다.
 * EDA를 통해 확인한 주요 내용은 다음과 같음
   * **전력 수요는 자기 회귀성을 가진 시계열 데이터임**
@@ -89,7 +89,57 @@
   * 코로나19가 유행한 2019- 20년, 산업 전력 수요가 줄어들며 전국 전력 수요가 일시적으로 하락함
   * 월별 태양광 전력거래량은 계속해서 증가하는 추세에 있으며, 대부분 봄에 가장 높은 수치를 기록함
     <p>단, 태양광 발전량은 실시간으로 계량되지 않고, 추정 또한 어려워 모델 학습에는 사용하지 않음</p>
-#### B.3. 데이터셋 소개 및 인사이트
+
+### **④ 모델링**
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/blob/main/Model_MAIN.ipynb)를 참고해주시기 바랍니다.
+* 아래와 같은 데이터를 기반으로 Sequential Dataset을 구성함
+  
+  <table align = 'center'>
+	  <tr>
+		  <th align = 'center'>분류</th>
+		  <th align = 'center'>내용</th>
+	  </tr>
+	  <tr>
+		  <td align = 'center'>ⓐ 전력 수요</td>
+		  <td align = 'center'>5분 간격 전국 전력 수요</td>
+	  </tr>
+	  <tr>
+		  <td rowspan = '4' align = 'center'>ⓑ 달력 및 시간 정보</td>
+		  <td align = 'center'>요일 (더미변수)</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '4' align = 'center'>ⓑ 달력 및 시간 정보</td>-->
+		  <td align = 'center'>휴일 (더미변수)</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '4' align = 'center'>ⓑ 달력 및 시간 정보</td>-->
+		  <td align = 'center'>월(1~12, 더미변수)</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '4' align = 'center'>ⓑ 달력 및 시간 정보</td>-->
+		  <td align = 'center'>시간대(0~23, 더미변수)</td>
+	  </tr>
+	  <tr>
+		  <td rowspan = '3' align = 'center'>ⓒ 기상 대표값※</td>
+		  <td align = 'center'>전국 최고 기온</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '3' align = 'center'>ⓒ 기상 대표값※</td>-->
+		  <td align = 'center'>전국 최저 기온</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '3' align = 'center'>ⓒ 기상 대표값※</td>-->
+		  <td align = 'center'>평균 일사량</td>
+	  </tr>
+	  <tr>
+		  <td rowspan = '2' align = 'center'>ⓓ 보조 지표</td>
+		  <td align = 'center'>1일 및 1주 전 동시간대 전력수요</td>
+	  </tr>
+	  <tr>
+		  <!--<td rowspan = '2' align = 'center'>ⓓ 보조 지표</td>-->
+		  <td align = 'center'>그 외 3개</td>
+	  </tr>
+  </table>
 **전력수요 EDA 결과**
 - 전력 수요는 명확한 계절성을 가지며, 연도에 관계없이 시간대별 패턴이 일관되게 유지됩니다.
 - 전력 수요에는 폭염이나 코로나와 같은 외부 요인이 반영되며, 계절성 패턴이 안정적으로 유지됩니다.
