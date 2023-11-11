@@ -55,6 +55,7 @@
 ### **② 데이터 전처리**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/blob/main/EDA_MAIN.ipynb)를 참고해주시기 바랍니다.
 * **5분 간격 전력 수요 정보 보간 (Interpolation)**
+  
   * 본 프로젝트에서 수집한 5분 간격 전력수요 데이터는 결측치의 비중이 높음
   * 여러 보간법 중 최적의 방법을 선택하기 위해 아래와 같은 순서로 실험을 진행함
     
