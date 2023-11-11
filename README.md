@@ -58,7 +58,8 @@
   
   * 본 프로젝트에서 수집한 5분 간격 전력수요 데이터는 결측치의 비중이 높음
   * 여러 보간법 중 최적의 방법을 선택하기 위해 아래와 같은 순서로 실험을 진행함
-    
+
+    <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/d00a3dc1-4644-4983-9021-ae3cb52d7c9c'></p>
 
 #### B.3. 데이터셋 소개 및 인사이트
 **전력수요 EDA 결과**
