@@ -171,7 +171,7 @@
         <td align = 'center' style = 'padding : 3px'><span style = 'color : red'><b>3.50%</b></span></td>
         <td align = 'center' style = 'padding : 3px'>2.88%</td>
     </tr>
-        <tr>
+    <tr>
         <td align = 'center' style = 'padding : 3px'>MAPE(CNN+GRU)</td>
         <td align = 'center' style = 'padding : 3px'>8.75%</td>
         <td align = 'center' style = 'padding : 3px'>3.38%</td>
