@@ -159,9 +159,9 @@
     <tr>
         <td align = 'center' style = 'padding : 3px'>MAPE(CNN+LSTM)</td>
         <td align = 'center' style = 'padding : 3px'>13.09%</td>
-        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.29%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : red'><b>3.29%</b></span></td>
         <td align = 'center' style = 'padding : 3px'>3.26%</td>
-        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.50%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : red'><b>3.50%</b></span></td>
         <td align = 'center' style = 'padding : 3px'>2.88%</td>
     </tr>
         <tr>
