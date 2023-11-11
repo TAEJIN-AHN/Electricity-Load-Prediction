@@ -61,7 +61,7 @@
     <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/d00a3dc1-4644-4983-9021-ae3cb52d7c9c'></p>
 
   * 결측 구간이 짧을 때는 선형 보간법이 우세하나, 길어질 수록 Median을 사용한 보간이 우세함
-    <p align = 'center'><img src = https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/9f40ec43-4b72-45a3-beb5-5b05191d5b1f'></p>
+    <p align = 'center'><img src = https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/9f40ec43-4b72-45a3-beb5-5b05191d5b1f' width = 80%></p>
 
 
 #### B.3. 데이터셋 소개 및 인사이트
