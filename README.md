@@ -181,6 +181,7 @@
 * 기상 정보를 제외함으로써 데이터 처리 비용을 줄이고 전력 수요 예측의 경제성을 높일 것으로 기대됨
 <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6863c30d-f7bd-433a-9339-74410f439434' width = 80%></p>
 
+
 ## Contributing Members
 <table align = 'center'>
 	<tr>
