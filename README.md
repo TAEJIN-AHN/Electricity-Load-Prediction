@@ -162,34 +162,9 @@
 * 기상 정보를 제외함으로써 데이터 처리 비용을 줄이고 전력 수요 예측의 경제성을 높일 것으로 기대됨
 <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6863c30d-f7bd-433a-9339-74410f439434' width = 80%></p>
 
+--
+## Contributing Members 
 <table align = 'center'>
-	<tr>
-		<th align = 'center' style = 'padding : 3px'>변수 조합(기호)</th>
-		<th align = 'center' style = 'padding : 3px'>ⓐ</th>
-		<th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ</th>
-		<th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓓ</th>
-		<th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ</th>
-		<th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ, ⓓ</th>
-	</tr>
-	<tr>
-		<td align = 'center' style = 'padding : 3px'>MAPE(CNN+LSTM)</td>
-		<td align = 'center' style = 'padding : 3px'>13.09%</td>
-		<td align = 'center' style = 'padding : 3px'><span style = 'color : red'><b>3.29%</b></span></td>
-		<td align = 'center' style = 'padding : 3px'>3.26%</td>
-		<td align = 'center' style = 'padding : 3px'><span style = 'color : red'><b>3.50%</b></span></td>
-		<td align = 'center' style = 'padding : 3px'>2.88%</td>
-	</tr>
-	<tr>
-		<td align = 'center' style = 'padding : 3px'>MAPE(CNN+GRU)</td>
-		<td align = 'center' style = 'padding : 3px'>8.75%</td>
-		<td align = 'center' style = 'padding : 3px'>3.38%</td>
-		<td align = 'center' style = 'padding : 3px'>3.48%</td>
-		<td align = 'center' style = 'padding : 3px'>3.80%</td>
-		<td align = 'center' style = 'padding : 3px'>4.78%</td>
-	</tr>
-</table>
-
-  <table align = 'center'>
 	<tr>
 		<th colspan = '2' align = 'center'>Contributing Members</th>
 	</tr>
@@ -217,4 +192,4 @@
 		<td align = 'center'>황승주</td>
 		<td align = 'center'><a href = 'https://github.com/peracer'>peracer · GitHub</a></td>
 	</tr>
-  </table>
+</table>
