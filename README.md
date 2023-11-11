@@ -1,4 +1,4 @@
-# 세상에서 가장 가벼운 단기 전력수요 예측 모델
+![image](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/37de49ec-4f64-4fed-b0fa-fa8229da8cdd)# 세상에서 가장 가벼운 단기 전력수요 예측 모델
 ## **요약**
 ### **① 기본 정보**
 * 팀구성 및 기여도 : 5명 / 20%
@@ -76,10 +76,14 @@
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/blob/main/EDA_MAIN.ipynb)를 참고해주시기 바랍니다.
 * EDA를 통해 확인한 주요 내용은 다음과 같음
   * **전력 수요는 자기 회귀성을 가진 시계열 데이터임**
+    
     * 같은 요일, 같은 시간의 자기 상관은 높은 수치를 보임
     * 연간 자기상관은 3개월을 기준으로 상승과 하강을 반복함
-   
       <p><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/f08a5528-6ecc-4d34-808a-214fd872e1f8'></p>
+    * 모델 학습 시, 이동평균 등의 기술지표와 요일, 시간대 등의 시간 정보를 반드시 포함하도록 함
+  * **기상정보 중 기온과 일사량이 전력 수요와 상대적으로 높은 상관관계를 가짐**
+
+    <p><img src = ''></p>
 #### B.3. 데이터셋 소개 및 인사이트
 **전력수요 EDA 결과**
 - 전력 수요는 명확한 계절성을 가지며, 연도에 관계없이 시간대별 패턴이 일관되게 유지됩니다.
