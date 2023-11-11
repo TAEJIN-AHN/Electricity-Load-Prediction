@@ -178,8 +178,10 @@
 
 * 위의 결과를 통해 본 프로젝트에서 검증하고자 했던 아래의 가설이 참임을 입증함
 <p align = 'center'><i>기상 정보를 활용한 예측 모델과 아닌 모델의 MAPE 차이는 1%p 이내 일 것이다.</i></p>
+
 * 기상 정보를 제외함으로써 데이터 처리 비용을 줄이고 전력 수요 예측의 경제성을 높일 것으로 기대됨
 <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6863c30d-f7bd-433a-9339-74410f439434' width = 80%></p>
+
 
 ※ **Contributing Members**
 
