@@ -183,9 +183,10 @@
 <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6863c30d-f7bd-433a-9339-74410f439434' width = 80%></p>
 
 
-※ **Contributing Members**
-
   <table align = 'center'>
+	<tr>
+		<th colspan = '2' align = 'center'>Contributing Members</th>
+	</tr>
 	<tr>
 		<th align = 'center'>Name</th>
 		<th align = 'center'>GitHub</th>
