@@ -208,12 +208,3 @@
 		<td align = 'center'><a href = 'https://github.com/peracer'>peracer · GitHub</a></td>
 	</tr>
 </table>
-
-
-| Name   | github                                             |
-| ------ | -------------------------------------------------- |
-| 나인성 | [InSung-Na · GitHub](https://github.com/inSung-Na) |
-| 남영   | [skadudd · GitHub](https://github.com/skadudd)     |
-| 박지호 |   [jihosuperman · GitHub](https://github.com/jihosuperman)                                                 |
-| 안태진       | [TAEJIN-AHN · GitHub](https://github.com/TAEJIN-AHN)                                                   |
-| 황승주 | [peracer · GitHub](https://github.com/peracer)     |
