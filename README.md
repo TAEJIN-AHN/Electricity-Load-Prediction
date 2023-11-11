@@ -146,7 +146,7 @@
 * Feature의 조합을 기준으로 비교군/대조군을 설정하여 CNN+LSTM(GRU) 모델을 학습, 성능을 비교함
   
   * Type 2와 Type 4의 MAPE는 3.29%, 3.5%로 기상정보를 제외한 모델의 성능이 상대적으로 우수함
-  * 
+    
     <table align = 'center'>
      <tr>
         <th align = 'center' style = 'padding : 3px'>변수 조합(기호)</th>
