@@ -141,7 +141,7 @@
 	  </tr>
   </table>
   <p align = 'center'>※ 기상 데이터의 결측치의 비중이 낮은 전국 특별시 및 광역시의 기온 및 일사량을 바탕으로 선정</p>
-  <p align = 'center'><img src = ''></p>
+  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6c7290e5-73ff-4816-bba9-cd3e9dd05bfe'></p>
 **전력수요 EDA 결과**
 - 전력 수요는 명확한 계절성을 가지며, 연도에 관계없이 시간대별 패턴이 일관되게 유지됩니다.
 - 전력 수요에는 폭염이나 코로나와 같은 외부 요인이 반영되며, 계절성 패턴이 안정적으로 유지됩니다.
