@@ -20,7 +20,7 @@
   * Pytorch 등의 ML/DL 프레임워크를 활용하기 위한 시계열 데이터 전처리 업무를 할 수 있습니다.
 
 ### **④ 주요 액션**
-<p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6b68e8b5-2127-4ca3-aa39-6a864d35325d' width = 80%></p>
+<p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6b68e8b5-2127-4ca3-aa39-6a864d35325d' width = 70%></p>
 
 ---
 ### B. 세상에서 가장 가벼운 단기 전력수요 예측 모델
