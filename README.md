@@ -142,7 +142,36 @@
   </table>
   <p align = 'center'>※ 기상 데이터의 결측치의 비중이 낮은 전국 특별시 및 광역시의 기온 및 일사량을 바탕으로 선정</p>
   <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Electricity-Load-Prediction/assets/125945387/6c7290e5-73ff-4816-bba9-cd3e9dd05bfe' width = 80%></p>
+
+* Feature의 조합을 기준으로 비교군/대조군을 설정하여 CNN+LSTM(GRU) 모델을 학습, 성능을 비교함
   
+  * Type 2와 Type 4의 MAPE는 3.29%, 3.5%로 기상정보를 제외한 모델의 성능이 상대적으로 우수함
+    <table style = 'font-size : 13px; border:1px solid black; margin-left:auto; margin-right:auto;'>
+     <tr>
+        <th align = 'center' style = 'padding : 3px'>변수 조합(기호)</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓓ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ</th>
+        <th align = 'center' style = 'padding : 3px'>ⓐ, ⓑ, ⓒ, ⓓ</th>
+    </tr>
+    <tr>
+        <td align = 'center' style = 'padding : 3px'>MAPE(CNN+LSTM)</td>
+        <td align = 'center' style = 'padding : 3px'>13.09%</td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.29%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'>3.26%</td>
+        <td align = 'center' style = 'padding : 3px'><span style = 'color : #D94E41'><b>3.50%</b></span></td>
+        <td align = 'center' style = 'padding : 3px'>2.88%</td>
+    </tr>
+        <tr>
+        <td align = 'center' style = 'padding : 3px'>MAPE(CNN+GRU)</td>
+        <td align = 'center' style = 'padding : 3px'>8.75%</td>
+        <td align = 'center' style = 'padding : 3px'>3.38%</td>
+        <td align = 'center' style = 'padding : 3px'>3.48%</td>
+        <td align = 'center' style = 'padding : 3px'>3.80%</td>
+        <td align = 'center' style = 'padding : 3px'>4.78%</td>
+    </tr>
+</table>
 **전력수요 EDA 결과**
 - 전력 수요는 명확한 계절성을 가지며, 연도에 관계없이 시간대별 패턴이 일관되게 유지됩니다.
 - 전력 수요에는 폭염이나 코로나와 같은 외부 요인이 반영되며, 계절성 패턴이 안정적으로 유지됩니다.
